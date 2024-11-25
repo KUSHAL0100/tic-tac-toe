@@ -21,6 +21,9 @@ li{
 .container,.right-side{
    padding: 90px 0;
 }
+.container{
+    position: relative;
+}
 .boxs{
     display: flex;
     justify-content: center;
@@ -60,7 +63,7 @@ li{
 }
 .winGif{
     width: 0;
-    transition: 2s ease-in-out;
+    transition: 1s ease-in-out;
 }
 .reset{
     background-color: rgb(157, 89, 220);
@@ -70,4 +73,22 @@ li{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.line{
+    position: absolute;
+    background-color: black;
+    height: 0.2vw;
+    width: 0;
+    transition: 1s ease-in-out;
+}
+@media (max-width:800px)
+{
+    .website{
+        flex-direction: column;
+        gap: 0;
+    }
+    .container,.right-side{
+        margin: 0 auto;
+        padding: 5vw 0;
+    }
 }
